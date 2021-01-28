@@ -1,27 +1,15 @@
 <resources>
-    <string name="app_name">FYP1</string>
-    <string name="standard_refuse_bag_4">Standard Refuse Bag - €4</string>
-    <string name="please_input_your_waste_amounts">Please input your waste amounts:</string>
-    <string name="large_refuse_bag_8">Large Refuse Bag - €8</string>
-    <string name="wheelie_bin_12">Wheelie Bin - €12</string>
+    <string name="app_name">SpinnerTest</string>
     <string name="domestic_waste">Domestic Waste</string>
-    <string name="_7_litre_kitchen_caddy_1">7 Litre Kitchen Caddy - €1</string>
     <string name="food_waste">Food Waste</string>
-    <string name="_12_litre_kitchen_caddy_2">12 Litre Kitchen Caddy - €2</string>
-    <string name="_25_litre_kitchen_caddy_4">25 Litre Kitchen Caddy - €4</string>
-    <string name="if_you_are_bringing_recycling_materials_there_is_a_standard_charge_of_2_no_matter_the_amount">If you are bringing recycling materials, there is a standard charge of €2, no matter the amount!</string>
-    <string name="recycling_materials">Recycling Materials</string>
+    <string name="cost">Cost</string>
     <string name="recycling">Recycling?</string>
-    <string name="add">Add</string>
-    <string name="clear">Clear</string>
+    <string name="if_you_are_bringing_recycling_waste_there_is_a_standard_charge_of_2_no_matter_the_amount">If you are bringing recycling waste, there is a standard charge of €2, no matter the amount!</string>
     <string name="total_cost">Total Cost</string>
-    <string name="_0">0</string>
-    <string name="_0_x_25_litre_kitchen_caddy">0 x 25 Litre Kitchen Caddy</string>
-    <string name="_0_x_12_litre_kitchen_caddy">0 x 12 Litre Kitchen Caddy</string>
-    <string name="_0_x_7_litre_kitchen_caddy">0 x 7 Litre Kitchen Caddy</string>
-    <string name="_0_x_large_refuse_bag">0 x Large Refuse Bag</string>
-    <string name="_0_x_wheelie_bin">0 x Wheelie Bin</string>
-    <string name="_0_x_standard_refuse_bag">0 x Standard Refuse Bag</string>
+    <string name="_0">€0</string>
+    <string name="please_input_your_waste_amounts">Please input your waste amounts:</string>
+    <string name="there_is_a_standard_entry_charge_of_3_for_all_customers">There is a standard entry charge of €3 for all customers.</string>
+    <string name="clear">Clear</string>
     <string name="booking_details">Booking Details</string>
     <string name="please_select_a_date_for_your_booking">Please select a date for your booking:</string>
     <string name="_01_01_20201">01/01/20201</string>
@@ -35,6 +23,29 @@
     <string name="please_select_a_date">Please select a date:</string>
     <string name="_08_00">08:00</string>
     <string name="confirm">Confirm</string>
+    <string name="domestic_cost">Domestic Cost</string>
+    <string name="food_cost">Food Cost</string>
+
+    <string-array name="domestic">
+        <item>Choose an item</item>
+        <item>Standard waste bag - €4</item>
+        <item>Large waste bag - €8</item>
+        <item>Wheelie bin - €12</item>
+        <item>Single mattress - €10</item>
+        <item>Double mattress - €20</item>
+        <item>Single armchair - €10</item>
+        <item>Double sofa/settee - €15</item>
+        <item>3 Seater sofa/settee - €20</item>
+        <item>Carpet (Standard 12ft x 12ft) - €15</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>Choose an item</item>
+        <item>7 Litre kitchen caddy - €1</item>
+        <item>12 Litre kitchen caddy - €2</item>
+        <item>25 Litre kitchen caddy - €4</item>
+        <item>1-3 Bags of green waste - €5</item>
+    </string-array>
 
     <string-array name="timeslots">
         <item>08:00</item>

@@ -1,3 +1,4 @@
+
 package com.example.is4447.fyp1;
 
 import android.app.DatePickerDialog;
@@ -29,6 +30,7 @@ public class BookingActivity extends AppCompatActivity implements AdapterView.On
 
     private static final String TAG = "BookingActivity";
     private TextView mDisplayDate;
+
     private DatePickerDialog.OnDateSetListener mDateSetListener;
     private TextView selectedTimeSlot;
 
@@ -116,6 +118,7 @@ public class BookingActivity extends AppCompatActivity implements AdapterView.On
 
     }
 
+/* code for inserting data into database from https://www.youtube.com/watch?v=kDZES1wtKUY&t=1511s */
     public void addBookingData() {
         btnConfirmBooking.setOnClickListener(new View.OnClickListener() {
             @Override

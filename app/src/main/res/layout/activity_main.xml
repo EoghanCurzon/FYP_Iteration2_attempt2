@@ -6,315 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Spinner
+        android:id="@+id/spDomestic"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDomesticWaste" />
+
     <TextView
-        android:id="@+id/tvStaRefBag"
+        android:id="@+id/tvDomesticWaste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
         android:layout_marginTop="45dp"
-        android:text="@string/standard_refuse_bag_4"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWasteInput" />
-
-    <TextView
-        android:id="@+id/tvWasteInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/please_input_your_waste_amounts"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/etStaRefBag"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="39dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/_0"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tvStaRefBag"
-        app:layout_constraintTop_toBottomOf="@+id/tvWasteInput" />
-
-    <TextView
-        android:id="@+id/tvLarRefBag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/large_refuse_bag_8"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvStaRefBag" />
-
-    <EditText
-        android:id="@+id/etLarRefBag"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/_0"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tvLarRefBag"
-        app:layout_constraintTop_toBottomOf="@+id/etStaRefBag" />
-
-    <TextView
-        android:id="@+id/tvWheBin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/wheelie_bin_12"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLarRefBag" />
-
-    <EditText
-        android:id="@+id/etWheBin"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/_0"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tvWheBin"
-        app:layout_constraintTop_toBottomOf="@+id/etLarRefBag" />
-
-    <TextView
-        android:id="@+id/tvDomWaste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
         android:text="@string/domestic_waste"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWasteInput" />
+        app:layout_constraintTop_toBottomOf="@+id/tvEntranceCharge" />
 
     <TextView
         android:id="@+id/tvFoodWaste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="32dp"
         android:text="@string/food_waste"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWheBin" />
+        app:layout_constraintTop_toBottomOf="@+id/spDomestic" />
 
-    <TextView
-        android:id="@+id/tv7Litre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/_7_litre_kitchen_caddy_1"
-        android:textSize="12sp"
+    <Spinner
+        android:id="@+id/spFood"
+        android:layout_width="266dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFoodWaste" />
 
-    <EditText
-        android:id="@+id/et7Litre"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="195dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/_0"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tv7Litre"
-        app:layout_constraintTop_toBottomOf="@+id/tvWasteInput" />
-
     <TextView
-        android:id="@+id/tv12Litre"
+        android:id="@+id/tvCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/_12_litre_kitchen_caddy_2"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv7Litre" />
-
-    <EditText
-        android:id="@+id/et12Litre"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="124dp"
         android:text="@string/_0"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tv12Litre"
-        app:layout_constraintTop_toBottomOf="@+id/et7Litre" />
-
-    <TextView
-        android:id="@+id/tv25Litre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="@string/_25_litre_kitchen_caddy_4"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv12Litre" />
-
-    <EditText
-        android:id="@+id/et25Litre"
-        android:layout_width="30dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/_0"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/tv25Litre"
-        app:layout_constraintTop_toBottomOf="@+id/et12Litre" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toEndOf="@+id/tvCostText"
+        app:layout_constraintTop_toBottomOf="@id/tvFoodCostFig" />
 
     <TextView
         android:id="@+id/tvRecyclingCost"
         android:layout_width="176dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/if_you_are_bringing_recycling_materials_there_is_a_standard_charge_of_2_no_matter_the_amount"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRecyclingWaste" />
-
-    <TextView
-        android:id="@+id/tvRecyclingWaste"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="40dp"
-        android:text="@string/recycling_materials"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWasteInput" />
+        android:layout_height="73dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/if_you_are_bringing_recycling_waste_there_is_a_standard_charge_of_2_no_matter_the_amount"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFood" />
 
     <CheckBox
-        android:id="@+id/cbxRecycling"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="48dp"
+        android:id="@+id/cbxRecyling"
+        android:layout_width="118dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
         android:text="@string/recycling"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRecyclingCost" />
+        app:layout_constraintStart_toEndOf="@+id/tvRecyclingCost"
+        app:layout_constraintTop_toBottomOf="@+id/spFood" />
 
-    <Button
-        android:id="@+id/btnAdd"
+    <TextView
+        android:id="@+id/tvCostText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="48dp"
-        android:text="@string/add"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/total_cost"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFoodCost" />
+
+    <TextView
+        android:id="@+id/tvInputWaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/please_input_your_waste_amounts"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEntranceCharge"
+        android:layout_width="286dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/there_is_a_standard_entry_charge_of_3_for_all_customers"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cbxRecycling" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInputWaste" />
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/clear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
-
-    <TextView
-        android:id="@+id/tvTotalCost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/total_cost"
-        android:textSize="16sp"
-        android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv25Litre" />
-
-    <TextView
-        android:id="@+id/tvTotalCostResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/_0"
-        android:textAlignment="center"
-        android:visibility="visible"
-        app:layout_constraintStart_toEndOf="@+id/tvTotalCost"
-        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
-
-    <TextView
-        android:id="@+id/tvStaRefSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_standard_refuse_bag"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTotalCostResult" />
-
-    <TextView
-        android:id="@+id/tvLarRefSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_large_refuse_bag"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvStaRefSummary" />
-
-    <TextView
-        android:id="@+id/tvWheBinSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_wheelie_bin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLarRefSummary" />
-
-    <TextView
-        android:id="@+id/tv7LitSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_7_litre_kitchen_caddy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvWheBinSummary" />
-
-    <TextView
-        android:id="@+id/tv12LitSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_12_litre_kitchen_caddy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv7LitSummary" />
-
-    <TextView
-        android:id="@+id/tv25LitSummary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:text="@string/_0_x_25_litre_kitchen_caddy"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv12LitSummary" />
+        app:layout_constraintTop_toBottomOf="@id/tvCost" />
 
     <Button
         android:id="@+id/btnConfirm1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCostText" />
+
+    <TextView
+        android:id="@+id/tvDomCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:text="Confirm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/domestic_cost"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecyclingCost" />
+
+    <TextView
+        android:id="@+id/tvFoodCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/food_cost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDomCost" />
+
+    <TextView
+        android:id="@+id/tvDomCostFig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@+id/tvDomCost"
+        app:layout_constraintTop_toBottomOf="@+id/cbxRecyling" />
+
+    <TextView
+        android:id="@+id/tvFoodCostFig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/_0"
+        app:layout_constraintStart_toEndOf="@+id/tvFoodCost"
+        app:layout_constraintTop_toBottomOf="@+id/tvDomCostFig" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

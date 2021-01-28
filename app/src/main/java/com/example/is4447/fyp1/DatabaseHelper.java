@@ -17,6 +17,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_5 = "Cost";
 
 
+
+    /* Database creating tutorial on YouTube https://www.youtube.com/watch?v=kDZES1wtKUY&t=1511s */
+
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -36,6 +40,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
 
     }
+
 
     public boolean insertBookingData(String email, String date, String time, String cost ){
 
